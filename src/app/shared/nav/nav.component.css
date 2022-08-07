@@ -1,0 +1,33 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #373737;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  font-size: 30px;
+  height: 2rem;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  cursor: pointer;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #8DC63F;
+  color: #FFFFFF;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}

@@ -1,0 +1,8 @@
+<app-sidbar></app-sidbar>
+<div class="topnav" id="myTopnav">
+  <div *ngFor="let nav of Navs">
+    <a   class="{{nav.class}}" (click)="changeActiveClass(nav)">
+      {{nav.title}}
+    </a >
+  </div>
+</div>

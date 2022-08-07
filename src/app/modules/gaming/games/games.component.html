@@ -1,0 +1,17 @@
+<div class="notdata" *ngIf="Games?.length<=0">
+  Not  Game Available
+</div>
+<div class="cards">
+  <figure class="card" *ngFor="let game of Games">
+    <div class="jackpot" *ngIf="game?.amount">
+      <b>
+        € {{game?.amount}}
+      </b>
+    </div>
+    <img src="{{game?.image}}" />
+    <figcaption>
+      <button class="button">Play</button><br>
+      {{game?.name}}
+    </figcaption>
+  </figure>
+</div>
